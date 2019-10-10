@@ -1,0 +1,23 @@
+@import "../../scss/vars";
+.header-menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+
+    &:not(:last-child){
+      margin-right: 2em;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-color
+    }
+  }
+}

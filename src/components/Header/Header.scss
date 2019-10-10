@@ -1,0 +1,39 @@
+@import "../../scss/vars";
+
+header {
+  background-color: $primary-color;
+}
+
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  &__logo {
+
+    a {
+      text-decoration: none;
+    }
+
+    &-any {
+      font-size: 40px;
+      font-weight: bold;
+      color: $secondary-color;
+    }
+
+    &-can {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+    }
+
+    &-since {
+      margin-left: 0.75em;
+      font-size: 18px;
+      font-style: italic;
+      color: white;
+    }
+  }
+}

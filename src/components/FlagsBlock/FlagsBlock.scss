@@ -1,0 +1,14 @@
+@import "./../../scss/vars";
+
+.flags-block {
+
+  .swiper-slide {
+    padding: 1em;
+
+    img {
+      width: 100%;
+      box-shadow: $base-box-shadow;
+    }
+  }
+}
+

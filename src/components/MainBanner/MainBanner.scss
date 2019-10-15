@@ -1,0 +1,53 @@
+@import "./../../scss/vars";
+
+.main-banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #888;
+  position: relative;
+  z-index: 1;
+  top: 0;
+
+  h1 {
+    position: absolute;
+    width: 900px;
+    left: 0;
+    right: 0;
+    top: 19%;
+    margin: 0 auto;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+  }
+
+  &__text {
+    position: absolute;
+    width: 900px;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+  }
+
+  &__advantages {
+    padding: 0;
+    position: absolute;
+    top: 65%;
+    width: 900px;
+    color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+  }
+
+  &__button {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+  }
+}

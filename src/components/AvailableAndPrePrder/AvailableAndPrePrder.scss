@@ -1,0 +1,52 @@
+@import './../../scss/vars';
+
+.available-and-pre-order {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(2, 1fr);
+
+
+  &__item {
+    background-color: #ddd;
+    padding: 1em;
+    height: 400px;
+    position: relative;
+  }
+
+  &__name {
+    font-size: 2em;
+    font-weight: bold;
+
+    color: $primary-color;
+  }
+
+  &__sections {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+
+    li {
+      list-style-type: none;
+
+      a {
+        color: $primary-color;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: fade_out(#888, 0.5);
+        padding: 1em;
+        display: block;
+        transition: 0.3s ease all;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}

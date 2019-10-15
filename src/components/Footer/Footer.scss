@@ -1,0 +1,62 @@
+@import "./../../scss/vars";
+
+footer {
+  border-top: 1px solid $grey-light;
+  box-shadow: $base-box-shadow;
+  padding: 2em 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: 4em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+
+    &-part-1 {
+      color: $primary-color;
+    }
+
+    &-part-2 {
+      color: $secondary-color;
+    }
+  }
+
+  &__mail a{
+    color: $primary-color;
+  }
+
+  &__socials {
+
+    padding: 10px 0 0 0;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.footer-menu {
+  display: flex;
+
+  padding: 10px 0 0 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-right: 2em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: bold;
+  }
+}

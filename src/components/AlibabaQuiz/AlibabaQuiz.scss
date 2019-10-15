@@ -1,0 +1,87 @@
+@import "./../../scss/vars";
+
+.alibaba-quiz {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 2em;
+
+  &__image {
+
+  }
+}
+
+.alibaba-quiz-image {
+  background-color: #ddd;
+  color: $primary-color;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .alibaba-quiz-image{
+      &__bg {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/abstract-2468874__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s ease all;
+
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    padding: 0 20px;
+  }
+
+  &__advantages {
+    position: absolute;
+    top: 85px;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+  }
+}
+
+
+.quiz-form {
+  padding: 1em;
+  border-bottom-left-radius: 3em;
+  border-top-right-radius: 3em;
+  background-color: fade_out($primary-color,0.6);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1em;
+
+  &__title {
+    font-weight: bold;
+    font-size: 2.5em;
+    width: 300px;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    grid-column: 1/3;
+  }
+
+  .form-control {
+    &.form-control--solid {
+      grid-column: 1/3;
+    }
+
+    input {
+      padding: 0.5em 1.25em;
+      width:100%
+    }
+  }
+}

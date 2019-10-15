@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/anycan/static/css/main.32ef9e71.chunk.css",
+    "main.js": "/anycan/static/js/main.8993498f.chunk.js",
+    "main.js.map": "/anycan/static/js/main.8993498f.chunk.js.map",
+    "runtime-main.js": "/anycan/static/js/runtime-main.815b849a.js",
+    "runtime-main.js.map": "/anycan/static/js/runtime-main.815b849a.js.map",
+    "static/css/2.881dc80d.chunk.css": "/anycan/static/css/2.881dc80d.chunk.css",
+    "static/js/2.12e1a1ea.chunk.js": "/anycan/static/js/2.12e1a1ea.chunk.js",
+    "static/js/2.12e1a1ea.chunk.js.map": "/anycan/static/js/2.12e1a1ea.chunk.js.map",
+    "index.html": "/anycan/index.html",
+    "precache-manifest.078c843fba140fca81205df4843c1dd4.js": "/anycan/precache-manifest.078c843fba140fca81205df4843c1dd4.js",
+    "service-worker.js": "/anycan/service-worker.js",
+    "static/css/2.881dc80d.chunk.css.map": "/anycan/static/css/2.881dc80d.chunk.css.map",
+    "static/css/main.32ef9e71.chunk.css.map": "/anycan/static/css/main.32ef9e71.chunk.css.map",
+    "static/media/Flag_of_India.svg": "/anycan/static/media/Flag_of_India.7a482fd3.svg",
+    "static/media/Flag_of_Japan.svg": "/anycan/static/media/Flag_of_Japan.a1e1ea51.svg",
+    "static/media/Flag_of_South_Korea.svg": "/anycan/static/media/Flag_of_South_Korea.b62df313.svg",
+    "static/media/Flag_of_Thailand.svg": "/anycan/static/media/Flag_of_Thailand.e7f18a54.svg",
+    "static/media/Flag_of_the_People's_Republic_of_China.svg": "/anycan/static/media/Flag_of_the_People's_Republic_of_China.9caece66.svg",
+    "static/media/Flag_of_the_Republic_of_China.svg": "/anycan/static/media/Flag_of_the_Republic_of_China.3c944f89.svg",
+    "static/media/Goods_for_business.jpg": "/anycan/static/media/Goods_for_business.77fdac28.jpg",
+    "static/media/Health_and_beauty.jpg": "/anycan/static/media/Health_and_beauty.3bc59ba4.jpg",
+    "static/media/Home_and_garden.jpg": "/anycan/static/media/Home_and_garden.b39084ba.jpg",
+    "static/media/Light_and_lighting.jpg": "/anycan/static/media/Light_and_lighting.d15e942d.jpg",
+    "static/media/Sport_and_outdoor.jpg": "/anycan/static/media/Sport_and_outdoor.9a1ed7ef.jpg",
+    "static/media/Toys_and_games.jpg": "/anycan/static/media/Toys_and_games.bf8c6a71.jpg",
+    "static/media/AlibabaQuiz.scss": "/anycan/static/media/abstract-2468874__340.679bf173.jpg",
+    "static/media/business_gifts.jpg": "/anycan/static/media/business_gifts.58b27690.jpg",
+    "static/media/electronic.jpg": "/anycan/static/media/electronic.9b5fb7d1.jpg",
+    "static/media/product.png": "/anycan/static/media/product.4b15b0bb.png",
+    "static/media/common.scss": "/anycan/static/media/ubuntumono-regular-webfont.e13b5a3d.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.815b849a.js",
+    "static/css/2.881dc80d.chunk.css",
+    "static/js/2.12e1a1ea.chunk.js",
+    "static/css/main.32ef9e71.chunk.css",
+    "static/js/main.8993498f.chunk.js"
+  ]
+}

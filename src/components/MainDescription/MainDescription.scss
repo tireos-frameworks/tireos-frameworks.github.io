@@ -1,0 +1,14 @@
+@import "./../../scss/vars";
+
+.main-description {
+  height: 100%;
+  //background-color: deepskyblue;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: $base-box-shadow;
+}

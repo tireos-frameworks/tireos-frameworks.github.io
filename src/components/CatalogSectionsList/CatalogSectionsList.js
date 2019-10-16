@@ -12,24 +12,24 @@ import LightAndLighting from './img/Light_and_lighting.jpg';
 import HealthAndBeauty from './img/Health_and_beauty.jpg';
 
 const sectionsList = [
-  { name: 'Business gifts', 'id': 1, image: BusinessGifts },
-  { name: 'Electronic', 'id': 2, image: Electronic },
-  { name: 'Sport and outdoor', 'id': 3,image: SportAndOutdoor },
-  { name: 'Home and garden', 'id': 4,image: HomeAndGarden},
-  { name: 'Toys and games', 'id': 5,image: ToysAndGames },
-  { name: 'Goods for business', 'id': 6,image: GoodsForBusiness },
-  { name: 'Light and lighting', 'id': 7,image: LightAndLighting },
-  { name: 'Health and beauty', 'id': 8,image: HealthAndBeauty },
+  { link:'', name: 'Business gifts', 'id': 1, image: BusinessGifts },
+  { link:'', name: 'Electronic', 'id': 2, image: Electronic },
+  { link:'', name: 'Sport and outdoor', 'id': 3,image: SportAndOutdoor },
+  { link:'', name: 'Home and garden', 'id': 4,image: HomeAndGarden},
+  { link:'', name: 'Toys and games', 'id': 5,image: ToysAndGames },
+  { link:'', name: 'Goods for business', 'id': 6,image: GoodsForBusiness },
+  { link:'', name: 'Light and lighting', 'id': 7,image: LightAndLighting },
+  { link:'', name: 'Health and beauty', 'id': 8,image: HealthAndBeauty },
 ];
 
 class CatalogSectionsList extends React.Component {
 
   sectionItem(item) {
     return (
-      <div className={"catalog-section-item"} key={item.id}>
-        <div className="catalog-section-item__image" style={{ backgroundImage: 'url("' + item.image  + '")'}}/>
-        <div className="catalog-section-item__name">{item.name}</div>
-      </div>
+      <a href={item.link} className={"catalog-section-item"} key={item.id}>
+        <span className="catalog-section-item__image" style={{ backgroundImage: 'url("' + item.image  + '")'}}/>
+        <span className="catalog-section-item__name">{item.name}</span>
+      </a>
     )
   }
 

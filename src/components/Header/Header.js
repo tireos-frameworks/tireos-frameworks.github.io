@@ -3,10 +3,42 @@ import './Header.scss';
 import HeaderMenu from '../HeaderMenu/HeaderMenu';
 import { Link } from 'react-router-dom';
 
-class Header extends React.Component{
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      fixHeader: 'is-not-fixed',
+    };
+
+    this.handleOnScroll = this.handleOnScroll.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', this.handleOnScroll);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.handleOnScroll);
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log('componentDidUpdate');
+  }
+
+  handleOnScroll(e) {
+    if (window.pageYOffset > 0 && this.state.fixHeader === 'is-not-fixed') {
+      this.setState({ fixHeader: '' })
+    } else if (window.pageYOffset === 0 && this.state.fixHeader !== 'is-not-fixed') {
+      this.setState({ fixHeader: 'is-not-fixed' })
+    }
+  }
+
+
   render() {
-    return(
-      <header>
+    return (
+      <header className={this.state.fixHeader}>
         <div className="container">
           <div className="header">
             <div className="header__logo">

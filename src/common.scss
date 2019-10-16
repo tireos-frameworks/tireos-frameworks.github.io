@@ -33,6 +33,10 @@ body {
   display: inline-block;
   text-decoration: none;
 
+  &.btn--block {
+    display: block;
+  }
+
   &.btn--primary {
     color: $primary-color;
     background-color: $secondary-color;
@@ -42,6 +46,16 @@ body {
       border-color: white;
       color: white;
       background-color: $primary-color;
+    }
+  }
+
+  &.btn--secondary-color {
+    color: $primary-color;
+    background-color: white;
+    border-color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-color;
     }
   }
 

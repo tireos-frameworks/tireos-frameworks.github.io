@@ -1,8 +1,18 @@
 import React from 'react';
 
 import './AlibabaQuiz.scss';
+import QuestionBg from './img/questions-bg.jpg';
+import SelectBox from '../FormItems/SelectBox/SelectBox';
 
 const AlibabaQuiz = () => {
+
+  const submitQuiz = (e) => {
+    e.preventDefault();
+    console.log('submit form', e.target);
+  };
+
+  const selectBoxValues = ['value1', 'value2', 'value3', 'value4', 'value5', 'value6'];
+
   return (
     <div className="alibaba-quiz">
       <div className="alibaba-quiz__image alibaba-quiz-image">
@@ -20,7 +30,11 @@ const AlibabaQuiz = () => {
         </div>
       </div>
       <div className="alibaba-quiz__form">
-        <form action="" className="quiz-form">
+        <form action=""
+              className="quiz-form"
+              style={{ backgroundImage: 'url("' + QuestionBg + '")' }}
+              onSubmit={submitQuiz}
+        >
           <div className="quiz-form__title">One Request, Multiply Quotes</div>
 
           <div className="form-control form-control--solid">
@@ -30,7 +44,10 @@ const AlibabaQuiz = () => {
             <input type="text" placeholder={'Quantity'}/>
           </div>
           <div className="form-control">
-            selectbox
+            <SelectBox
+              name="alibaba-quiz-section"
+              currentValue={'Введите значение'}
+              values={selectBoxValues}/>
           </div>
 
           <div className="form-control"/>

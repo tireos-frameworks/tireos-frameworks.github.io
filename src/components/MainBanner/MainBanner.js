@@ -1,11 +1,12 @@
 import React from 'react';
 
 import './MainBanner.scss';
+import BgImage from './img/bg.jpg';
 
 const MainBanner = () => {
 
   return (
-    <div className={'main-banner'}>
+    <div className={'main-banner'} style={{ backgroundImage: 'url("'+BgImage+'")' }} >
       <h1>Увеличьте доход ващего бизнеса, поставляя товары из стран Азии</h1>
 
       <div className="main-banner__text">По Вашему заказу найдем, закупим или произведем товары в

@@ -1,0 +1,75 @@
+@import "./../../../scss/vars";
+
+.select-box {
+  position: relative;
+
+  &.is-open {
+    .select-box {
+      &__values {
+        display: block;
+      }
+    }
+  }
+
+  &__current {
+    cursor: pointer;
+
+    &:hover {
+      .select-box__opener:after{
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  &__opener {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+      position: absolute;
+      top: 4px;
+      content: '';
+      border-left: 2px solid $grey;
+      border-bottom: 2px solid $grey;
+      transform-origin: center;
+      transform: rotateZ(-45deg);
+      width: 1em;
+      height: 1em;
+
+    }
+  }
+
+  &__values {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid $grey;
+    transform: translateY(100%);
+
+    li {
+      list-style-type: none;
+      padding: 0.5em 1.25em;
+      cursor: pointer;
+
+      &:not(:last-child){
+        border-bottom: 1px solid $grey-light;
+      }
+
+      &:hover {
+        color: $primary-color;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

@@ -1,7 +1,12 @@
 import React from 'react';
 
 import './PopularProducts.scss';
-import ProductImage from './img/product.png';
+import Image0 from './img/out-0.jpg';
+import Image1 from './img/out-1.jpg';
+import Image2 from './img/out-2.jpg';
+import Image3 from './img/out-3.jpg';
+import Image4 from './img/out-4.jpg';
+import DrawProduct from './DrawProduct';
 
 class PopularProducts extends React.Component {
   constructor(props) {
@@ -11,14 +16,22 @@ class PopularProducts extends React.Component {
       { code: 'new', title: 'New 2019' },
       { code: 'best', title: 'Best sellers' },
       { code: 'exclusive', title: 'Exclusive' },
-    ]
+    ];
+
     this.data = [
       {
         id: 1,
         name: 'Product name',
         stickers: { 'new': "Y", 'best': "Y", 'exclusive': 'Y' },
-        image: ProductImage,
+        images: [Image0, Image1, Image2, Image3, Image4],
         link: '/',
+        props: [
+          { code: 'quantity', name: 'Quantity', value: 900 },
+          { code: 'group', name: 'Group', value: 'Lighting' },
+          { code: 'price', name: 'Price', value: 1500000 },
+          { code: 'town', name: 'Town', value: 'Sochi' },
+          { code: 'target', name: 'Target', value: 'Corporative gift' },
+        ],
       }
     ];
 
@@ -29,41 +42,16 @@ class PopularProducts extends React.Component {
     }
   }
 
-
-  item(product) {
-    return (
-      <div className="popular-products__item" key={product.id}>
-        <a href={product.link} className="popular-products__image">
-          <img src={product.image} alt=""/>
-          <ul className="popular-products__stickers">
-            {this.stickers.map(sticker => {
-              if (product.stickers[sticker.code] !== undefined) {
-                return (
-                  <li key={sticker.code} className={sticker.code}>{sticker.title}</li>
-                )
-              }
-              return ''
-            })}
-          </ul>
-        </a>
-
-        <a href={product.link} className={'popular-products__name'}>{product.name}</a>
-
-        <div className="popular-products__button">
-          <div className="btn btn--primary">Get product</div>
-        </div>
-      </div>
-    )
-  }
-
   render() {
+
+    console.log(this.data);
 
     return (
       <div className={'popular-products'}>
         <h2 className={'title'}>Popular products</h2>
 
         <div className="popular-products__items">
-          {this.data.map(item => this.item(item))}
+          {this.data.map((item) => <DrawProduct product={item} stickers={this.stickers} key={item.id}/>)}
         </div>
 
       </div>

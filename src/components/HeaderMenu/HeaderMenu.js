@@ -7,7 +7,7 @@ const HeaderMenu = (prop) => {
   const themeClass = (prop.hasOwnProperty('theme')) ? prop.theme : 'header-menu';
 
   const menu = [
-    { link: '/catalog', title: 'Catalog' },
+    { link: '/catalog', title: 'Products' },
     { link: '/service', title: 'Service' },
     { link: '/delivery', title: 'Delivery' },
     { link: '/about-us', title: 'About Us' },

@@ -8,7 +8,9 @@
     "normalize.css": "^8.0.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
     "react-id-swiper": "^2.3.2",
+    "react-parallax": "^2.2.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "swiper": "^5.0.4",
@@ -37,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://tireos-frameworks.github.io/anycan"
+  "homepage": "https://tireos-frameworks.github.io/anycan"
 }

@@ -13,7 +13,7 @@
     "react-parallax": "^2.2.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "swiper": "^5.0.4",
+    "swiper": "^6.5.1",
     "ubuntu-fontface": "^0.1.13"
   },
   "scripts": {
